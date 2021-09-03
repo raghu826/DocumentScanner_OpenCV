@@ -1,5 +1,5 @@
 # USAGE
-# python scan.py --image images/page.jpg
+# python scan.py --image images/name.jpg
 
 # import the necessary packages
 from transform import four_point_transform
@@ -74,4 +74,5 @@ warped = (warped > T).astype("uint8") * 255
 print("STEP 3: Apply perspective transform")
 cv2.imshow("Original", imutils.resize(orig, height = 650))
 cv2.imshow("Scanned", imutils.resize(warped, height = 650))
+cv2.imwrite("images/output_image.jpg", warped)
 cv2.waitKey(0)
