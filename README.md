@@ -9,7 +9,7 @@ A simple mobile document scanner has been implemented using OpenCV library. It c
 - FInd out the countours in the edged image. Here Countours are nothing but the points along the boundary of an object. As the document is mainly focussed, we need the largest countours. So that we can get rid of small countours.
 - Apply four point transform using [`transform.py`](https://github.com/raghu826/DocumentScanner_OpenCV/blob/main/transform.py) to obtain the top-down view of the contoured image. To get the black and white effect, image is converted to grayscale and threshold it to get the scanned document.
 
-## To run the code `python scan.py --image images/imageName.jpg`
+#### To run the code: `python scan.py --image images/imageName.jpg`
 
 
 
